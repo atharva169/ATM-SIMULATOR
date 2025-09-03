@@ -30,7 +30,7 @@ class ATM:
             elif option == "4":
                 self.update_pin()
             elif option == "5":
-                print("Thank you for using the ATM. Goodbye!")
+                print("Thank you for using the ATM. ADIOS AMIGOS!!!")
                 break
             else:
                 print("Invalid choice! Please select from 1-5.")
@@ -54,7 +54,7 @@ class ATM:
             self.balance -= withdraw
             print(f"Rs.{withdraw} withdrawn successfully.")
         else:
-            print("Insufficient balance. Try smaller amount.")
+            print("Insufficient balance.")
 
     def update_pin(self):
         new_pin = int(input("Enter new 4-digit PIN: "))
@@ -64,3 +64,4 @@ class ATM:
 atm = ATM() 
 if atm.login():
     atm.menu() 
+
